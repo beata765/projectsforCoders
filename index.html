@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+ <title>Service evaluation</title>
+  <head>
+      <link href="../static/main.css" rel="stylesheet">
+  </head>
+  <body>
+     <div class="container">
+      <h1 >Short survey about customers experience at Ocean Dry Cleaners</h1>
+      <h3>Please fill in the entries to evaluate our service</h3>
+  <form id="survey-form" action="success.html" method="POST">
+        <div class="form-group">
+      <label id="name-lable" for="name">Name</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required/>
+      </div> 
+      <div>
+        <label id="email-label" for ="email">Email</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required />
+      </div>
+      <div class="form-group">
+        <p>Discribe your frequency of using the service</p>
+        <select id="dropdown" name="frequency" class="form-control" required>
+          <option disable selected value>Select the frequency</option>
+          <option value="twice or more a week">Twice or more a week</option>
+          <option value="once a week">Once a week</option>
+          <option value="fortnight">Fortnight</option>
+          <option value="less than fortnight">Less than fortnight</option>
+          <option value="once a month">Once a month</option>
+          <option value="irregularly">On an irregular basis</option>
+       </select>
+       </div>   
+      
+      <!--<input title="Your email will be safe with us" placeholder ="Enter your email address"/>
+    <input title="Your data will be safe with us" placeholder ="Enter your height in cm" />
+        
+       -->
+     <div class="form-group">
+     <p>Mainly what service do you use?</p>
+        <select id="dropdown2" name="services" class="form-control" required>
+          <option disable selected value>Select the service</option>
+          <option value="dry-cleaning">Dry-cleaning</option>
+          <option value="Shirtservice">Shirt service</option>
+          <option value="shoe repairs">Shoe repairs</option>
+          <option value="alteration">Alteration</option>
+          <option value="dry-cleaning &shirt service">dry-cleaning & shirt service</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <p>Would you recommend the service provided by Ocean Dry Cleaners to anyone?
+    </p>
+     <label>
+      <input 
+      name="user-recommend"
+      value="definitely"
+      type="radio"
+      class="input-radio"
+      checked />Definitely
+      </label>
+      <label>
+        <input
+      name="user-recommend"
+      value="maybe"
+      type="radio"
+      class="input-radio"/>Maybe
+      </label>
+      <label>
+      <input 
+      name="user-recommend"
+      value="not sure"
+      type="radio"
+      class="input-radio" />  
+      Not sure
+    </label>
+</div>
+<div class="form-group">
+  <p>What servce does satisfy you the most?</p>
+<select 
+id="most-like"
+name="MostLike"
+class="form-control"
+required>
+<option disabled selected value/>Select an option
+</option>
+<option value="dry-cleaning">Dry-cleaning service</option>
+<option value="shirt-service">Shirt service</option>
+<option value="alteration and repairs">Alteration and repaires</option>
+<option value="shoe repaires">Shoe repairs</option>
+<option value="key cutting">Key cutting</option>
+</select>
+<div class="form-group>
+ <button class="submit-button" type="submit">Submit</button>
+    </div> 
+</form>
+    </body>
+     
+  </html>
